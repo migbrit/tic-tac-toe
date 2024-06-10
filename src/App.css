@@ -5,3 +5,11 @@
   text-align: center;
 }
 
+#title{
+  color: red;
+  font-weight: bold;
+  background: linear-gradient(90deg, #9501ff, #0655f2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
