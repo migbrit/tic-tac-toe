@@ -1,9 +1,10 @@
 import './Square.css';
 
-export default function Square({ value }){
+export default function Square({value, onSquareClick}){
+
     return (
         <>
-            <button className="square">{value}</button>
+            <button className="square" onClick={onSquareClick}>{value}</button>
         </>
     )
 }

@@ -4,7 +4,7 @@ import GameBoard from './components/GameBoard/GameBoard'
 function App() {
   return (
     <>
-      <h1>Tic-Tac-Toe Game</h1>
+      <h1 id='title'>Tic-tac-toe Game</h1>
       <GameBoard />
     </>
   )
