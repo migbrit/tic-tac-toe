@@ -1,12 +1,8 @@
 import React from 'react';
-import { useState } from 'react';
 import Square from '../Square/Square';
 import './GameBoard.css';
 
-export default function GameBoard(){
-    const [xIsNext, setXIsNext] = useState(true)
-    const [squares, setSquares] = useState(Array(9).fill(null))
-
+export default function GameBoard({xIsNext, squares, onPlay}){
     function handleClick(i, xIsNext){
         if(squares[i] || calculateWinner(squares)){
             return;
@@ -18,8 +14,7 @@ export default function GameBoard(){
         }else{
             nextSquares[i] = "O";
         }
-        setSquares(nextSquares);
-        setXIsNext(!xIsNext); 
+        onPlay(nextSquares);
    
     }
 
